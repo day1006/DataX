@@ -41,6 +41,7 @@ public class AdbMysqlWriter extends Writer {
             this.commonRdbmsWriterJob.prepare(this.originalConfig);
         }
 
+        // 分割
         @Override
         public List<Configuration> split(int mandatoryNumber) {
             return this.commonRdbmsWriterJob.split(this.originalConfig, mandatoryNumber);
